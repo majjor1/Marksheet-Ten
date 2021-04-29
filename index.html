@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MARK SHEET</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="body-color">
+    <div class="container-sm bc-color">
+        <div class="col-sm-12   text-center">
+            <img style="width: 150px;" src="marksheet-logo.png" alt="">
+            <h3 class="text-center">AGHA KHAN UNIVERSITY EXAMINATION BOARD</h3>
+            <h3 class="text-center">FG SAPPER BOYS HIGH SCHOOL</h3>
+            <h4 class="text-center">RESULT SLIP</h4>
+        </div>
+        <div class="row table">
+            <div class="col-md-8 form-group pl-5">
+                <div class="d-flex justify-content-between col-10 align-items-center">
+                    <label class="font-weight-bold h5 my-2 " for="">Condidate Name : </label>
+                    <input type="text" class="w-50 bg-transparent border-0 border-bottom">
+                </div>
+                <div class="d-flex justify-content-between col-10 align-items-center">
+                    <label class="font-weight-bold h5 my-2 " for="">Son Of : </label>
+                    <input type="text" class="w-50 bg-transparent border-0 border-bottom">
+                </div>
+                <div class="d-flex justify-content-between col-10 align-items-center">
+                    <label class="font-weight-bold h5 my-2 " for="">Roll No : </label>
+                    <input type="text" class="w-50 bg-transparent border-0 border-bottom">
+                </div>
+                <div class="d-flex justify-content-between col-10 align-items-center">
+                    <label class="font-weight-bold h5 my-2 " for="">Group : </label>
+                    <input type="text" class="w-50 bg-transparent border-0 border-bottom">
+                </div>
+                <div class="d-flex justify-content-between col-10 align-items-center">
+                    <label class="font-weight-bold h5 my-2 " for="">School Name : </label>
+                    <input type="text" class="w-50 bg-transparent border-0 border-bottom">
+                </div>
+                <div class="d-flex justify-content-between col-10 align-items-center">
+                    <label class="font-weight-bold h5 my-2 " for=""> Date Of Birth : </label>
+                    <input type="text" class="w-50 bg-transparent border-0 border-bottom">
+                </div>
+
+
+            </div>
+            <div class="center ">
+                <div class="form-input">
+                    <label for="file-ip-1">Upload Image</label>
+                    <input type="file" id="file-ip-1" accept="image/*" onchange="showPreview(event);">
+                    <div class="preview">
+                        <img id="file-ip-1-preview">
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+        <table class="d-flex justify-content-center ">
+            <tr>
+                <td class="border font-weight-bold">Subjects </td>
+                <td class="row m-0 p-0 border-0 border-bottom border-top">
+                    <span class="col-12  text-center font-weight-bold border-bottom">Obtained Marks</span>
+                    <span class="col-6  text-center border-right font-weight-bold">Theroy</span>
+                    <span class="col-6 text-center font-weight-bold">Practical</span>
+                </td>
+                <td class="border font-weight-bold">Total Obtained Marks </td>
+                <td class="border font-weight-bold">Max Marks</td>
+                <td class="border font-weight-bold">Remarks</td>
+            </tr>
+            <tr>
+                <td class="font-weight-bold">English</td>
+                <td class="d-flex border-0 border-bottom p-0 ">
+                    <input type="number" class="num-inp border-0 border-right f-inp" value="" placeholder="100">
+                    <input type="text" class="num-inp border-0 s-inp" value="" disabled>
+                </td>
+                <td class="en-total">0</td>
+                <td>100</td>
+                <td class="e-marks">0</td>
+            </tr>
+            <tr>
+                <td class="font-weight-bold">Urdu</td>
+                <td class="d-flex border-0 border-bottom p-0">
+                    <input type="text" class="num-inp border-0 border-right u-f-inp " value="" placeholder="100">
+                    <input type="text" class="num-inp border-0 u-s-inp" value="" disabled>
+                </td>
+                <td class="un-total">0</td>
+                <td>100</td>
+                <td class="u-marks">0</td>
+            </tr>
+            <tr>
+                <td class="font-weight-bold">Math</td>
+                <td class="d-flex border-0 border-bottom p-0">
+                    <input type="text" class="num-inp border-0 border-right mf-inp" placeholder="100">
+                    <input type="text" class="num-inp border-0 ms-inp" disabled>
+                </td>
+                <td class="mn-total">0</td>
+                <td>100</td>
+                <td class="m-marks">0</td>
+            </tr>
+            <tr>
+                <td class="font-weight-bold">Islamiat</td>
+                <td class="d-flex border-0 border-bottom p-0">
+                    <input type="text" class="num-inp border-0 border-right if-inp" placeholder="100">
+                    <input type="text" class="num-inp border-0 is-inp" disabled>
+                </td>
+                <td class="in-total">0</td>
+                <td>100</td>
+                <td class="i-marks">0</td>
+            </tr>
+            <tr>
+                <td class="font-weight-bold">Social Studies</td>
+                <td class="d-flex border-0 border-bottom p-0">
+                    <input type="text" class="num-inp border-0 border-right sf-inp" placeholder="100">
+                    <input type="text" class="num-inp border-0 ss-inp" disabled>
+                </td>
+                <td class="sn-total">0</td>
+                <td>100</td>
+                <td class="s-marks">0</td>
+            </tr>
+            <tr>
+                <td class="font-weight-bold">Physics</td>
+                <td class="d-flex border-0 border-bottom p-0">
+                    <input type="text" class="num-inp border-0 border-right pf-inp" placeholder="100">
+                    <input type="text" class="num-inp border-0 ps-inp" placeholder="25">
+                </td>
+                <td class="pn-total">0</td>
+                <td>100</td>
+                <td class="p-marks">0</td>
+            </tr>
+            <tr>
+                <td class="font-weight-bold">Chemistry</td>
+                <td class="d-flex border-0 border-bottom p-0">
+                    <input type="text" class="num-inp border-0 border-right cf-inp" placeholder="100">
+                    <input type="text" class="num-inp border-0 cs-inp" placeholder="25">
+                </td>
+                <td class="cn-total">0</td>
+                <td>100</td>
+                <td class="c-marks">0</td>
+            </tr>
+            <tr>
+                <td class="font-weight-bold">Biology</td>
+                <td class="d-flex border-0 p-0">
+                    <input type="text" placeholder="100" class="num-inp border-0 border-right bf-inp">
+                    <input type="text" class="num-inp border-0 bs-inp" placeholder="25">
+                </td>
+                <td class="bn-total">0</td>
+                <td>100</td>
+                <td class="b-marks">0</td>
+            </tr>
+            <tr>
+                <td class="font-weight-bold">
+                    Grand Total
+                </td>
+                <td class="text-center g-total">0</td>
+                <td class="text-center font-weight-bold">Total Marks</td>
+                <td class="text-center" colspan="2">800</td>
+            </tr>
+            <tr>
+                <td class="font-weight-bold">
+                    Grade
+                </td>
+                <td class="text-center grade">A+</td>
+                <td class="text-center font-weight-bold">Percentage</td>
+                <td class="text-center perc" colspan="2" placeholder="">100%</td>
+            </tr>
+        </table>
+
+
+
+
+        <div class="row pb-0 mb-0 m-2">
+            <p class="lead w-75 col-12">The Grand Total is claculated in accordance with national religions which limit grace mark to three marks in at most two Subjects.</p>
+
+            <div class="d-flex flex-column ml-3  align-items-center justify-content-center">
+
+                <img src="signature.png" width="200" alt="">
+                <h5 class=" mt-2">Dr. Major Sami</h5>
+                <h6 class="">Director, AKU-EB</h6>
+
+            </div>
+            <h5 class="d-flex  justify-content-end pb-5 mr-3 col-12 date"><span class="font-weight-bold">Date :</span> 28 - 2 - 2021
+            </h5>
+        </div>
+    </div>
+</body>
+<script src="main.js"></script>
+
+</html>
